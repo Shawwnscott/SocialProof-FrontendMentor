@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Final-Product-Screenshot.png)
+
 
 ### Links
 
