@@ -1,0 +1,127 @@
+@media (max-width: 1440px) {
+  .main-container {
+    max-width: 80%;
+  }
+  .intro-section {
+    /* To make text sit better to the right */
+    max-width: 65%;
+  }
+
+  .testimonials-section {
+    gap: 32px;
+  }
+  .testimonial-box {
+    row-gap: 16px;
+
+    padding: 24px 32px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .intro-section {
+    /* To make text sit better to the right */
+    max-width: 75%;
+  }
+
+  .rating-section {
+    gap: 12px;
+  }
+  .rating-box {
+    justify-content: space-between;
+    padding: 16px 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    max-width: 90%;
+  }
+  .intro-section {
+    /* To make text sit better to the right */
+    max-width: 85%;
+  }
+
+  .rating-box {
+    justify-content: space-between;
+  }
+
+  .star {
+    margin-left: -3px;
+  }
+  .indent-1 {
+    margin-right: 10%;
+  }
+  .indent-2 {
+    margin-left: 1%;
+    margin-right: 2%;
+  }
+  .indent-3 {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 875px) {
+  .main-container {
+    max-width: 85%;
+  }
+  .upper-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+  .intro-section {
+    align-self: center;
+    text-align: center;
+  }
+  .intro-header {
+    line-height: 1.2;
+  }
+  .testimonials-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonial-box {
+    align-self: center;
+    text-align: center;
+    max-width: 80%;
+    padding: 24px 48px;
+    row-gap: 12px;
+  }
+
+  /* RESET THE INDENT TO MAKE STAIRCASE PATTERN */
+  .indent-1 {
+    margin-right: 0%;
+  }
+  .indent-2 {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .indent-3 {
+    margin-left: 0%;
+  }
+  .margin-top-2 {
+    transform: translateY(0%);
+  }
+
+  .margin-top-3 {
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 478px) {
+  .rating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-box {
+    padding: 16px 32px;
+  }
+}
+
+@media (max-width: 378px) {
+  .testimonial-box {
+    padding: 16px 24px;
+  }
+}

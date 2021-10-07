@@ -1,0 +1,156 @@
+/* -FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+-------06 SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 8% auto;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-position: 50% -50%, bottom;
+  background-repeat: no-repeat;
+}
+
+/* ************************************************************************* */
+/*********************************** UPPER HALF *****************************/
+/* ************************************************************************* */
+.upper-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  /* To make text sit better to the right */
+  max-width: 60%;
+}
+
+.intro-header,
+.rating-text {
+  color: hsl(300, 43%, 22%);
+}
+.intro-header {
+  font-size: 44px;
+}
+
+.intro-text {
+  color: hsl(303, 10%, 53%);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* *********Rating Section******** */
+
+.rating-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rating-box {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: hsl(300, 24%, 96%);
+  padding: 24px 38px;
+  border-radius: 9px;
+}
+.rating-text {
+  font-weight: 700;
+}
+
+/* To align rating boxes like staircase */
+
+.indent-1 {
+  margin-right: 15%;
+}
+.indent-2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.indent-3 {
+  margin-left: 15%;
+}
+
+/* ************************************************************************* */
+/*********************************** LOWER HALF *****************************/
+/* ************************************************************************* */
+
+.testimonials-section {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 42px;
+}
+
+.testimonial-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  border-radius: 10px;
+  padding: 32px 48px;
+
+  background-color: hsl(300, 43%, 22%);
+}
+.testimonial-header {
+  display: flex;
+  align-items: center;
+}
+.buyer-box {
+  margin-left: 16px;
+}
+
+.buyer-name,
+.testimonial {
+  color: hsl(0, 0%, 100%);
+}
+.verified-buyer {
+  color: hsl(333, 80%, 67%);
+}
+
+.testimonial-img {
+  height: 48px;
+  border-radius: 50%;
+}
+
+.buyer-name {
+  font-size: 15px;
+}
+
+.verified-buyer {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.testimonial {
+  font-size: 14.5px;
+  /* font-weight: 400; */
+}
+
+/* To align testimonial boxes like staircase */
+
+.margin-top-2 {
+  transform: translateY(10%);
+}
+
+.margin-top-3 {
+  transform: translateY(20%);
+}
